@@ -28,7 +28,7 @@ postcss.config.js
 
 # Prisma
 /prisma/dev.db
-/prisma/migrations/
+# /prisma/migrations/ — un-ignored by CodeValid onboarding so initial migration reaches the build context
 **/schema.prisma.lock
 *.db
 *.sqlite
@@ -85,3 +85,9 @@ out/
 __pycache__/
 .pytest_cache/
 .venv/
+
+# CodeValid — auto-added
+.codevalid/ui/Dockerfile
+.codevalid/ui/playwright.config.js
+.codevalid/ui/helper/
+.codevalid/ui/helpers/
